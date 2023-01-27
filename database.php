@@ -1,9 +1,9 @@
 <?php
     
-    $servername = "bgoexhylean3hznrtojp-mysql.services.clever-cloud.com";
-    $username = "u3mv4mnaiqulxl3c";
-    $password = "KGYbFkghcWVmJac4tkWu";
-    $dbname = "bgoexhylean3hznrtojp";
+    $servername = "sql308.epizy.com";
+    $username = "epiz_33469596";
+    $password = "infinitysanty1";
+    $dbname = "epiz_33469596_Rento";
     
     // Create connection
     $conn =  mysqli_connect($servername, $username, $password,$dbname);
