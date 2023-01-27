@@ -1,0 +1,161 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Calvier.ttf);
+}
+
+:root {
+    --secondary : #2C3333;
+    --font: #F1F1F1; 
+    --color: rgb(232, 110, 53);
+}
+
+.bg {
+  background: url('./pikrepo.jpg') center/cover;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.bg::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #150000a4;
+  z-index: 1;
+
+}
+.content {
+  width: 70%;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+.title {
+    font-family: myFirstFont;
+    color: var(--font);
+    font-size: 10rem;
+    text-align: center;
+    /* position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%,-50%);
+  z-index: 2; */
+    
+    
+}
+.sub_title {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: myFirstFont; */
+    color: var(--font);
+    font-size: 2rem;
+    padding-bottom: 5rem;
+}
+span {
+    font-family: myFirstFont; 
+    font-size: 1.7rem;
+}
+h1,p {
+    color: var(--font);
+}
+p {
+    margin-bottom: 0rem !important;
+}
+
+input, textarea,select {
+    background-color: #212529 !important; 
+    color: #f1f1f1 !important;
+  }
+
+  textarea:focus, input:focus, select:focus {
+    color: #f1f1f1 !important;
+}
+
+
+a {
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  padding: .75rem 4rem;
+  margin-right: 2rem;
+  transition: 0.5s;
+  
+}
+
+a:hover {
+  letter-spacing: 0.25rem;
+  background: var(--color);
+  color: var(--color);
+  box-shadow: 0 0 50px 10px var(--color);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+
+a span {
+  position: relative;
+  z-index: 1;
+}
+
+a i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+a i::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid var(--color);
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+a:hover i::before {
+  left: 20%;
+  width: 20px;
+}
+
+a i::after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid var(--color);
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+a:hover i::after {
+  left: 80%;
+  width: 20px;
+}
+
