@@ -1,10 +1,8 @@
-const btn = document.querySelector('.btn');
+const popup1 = document.querySelector(".popup1");
 
-const popup = document.querySelector('.popup');
-popup.style.display = 'none';
-btn.addEventListener('click',(e)  => {
-    console.log(popup);
-    popup.style.display = 'flex';
+const borrow = document.querySelector(".borrow");
 
-})
-
+popup1.style.display = "none";
+borrow.addEventListener("click", (e) => {
+  popup1.style.display = "flex";
+});
